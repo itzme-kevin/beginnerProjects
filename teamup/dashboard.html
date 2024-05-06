@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sports Finder Dashboard</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome!</h1>
+    <p>Find your next sports activity.</p>
+
+    <p>This app would like to access your location to find nearby events.</p>
+    <button id="location-btn">Allow Location</button>
+
+    <form id="search-form">
+      <label for="sport">Search Sport:</label>
+      <input type="text" id="sport" name="sport" required>
+
+      <fieldset>
+        <legend>Criteria</legend>
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+          <option value="">All</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+
+        <label for="age-limit">Age Limit (optional):</label>
+        <input type="number" id="age-limit" name="age-limit">
+
+        <label for="time">Time (optional):</label>
+        <input type="time" id="time" name="time">
+      </fieldset>
+      <button type="submit">Search</button>
+    </form>
+
+    <button id="host-btn">Host a Sport</button>
+  </div>
+  <script src="dashboard.js"></script>
+</body>
+</html>
